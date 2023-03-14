@@ -1,0 +1,171 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    color: rgb(1, 1, 66);
+    font-size: 35px;
+    margin: 0;
+    background-image: url('imgs/abstract-background-made-with-numbers.jpg');
+}
+
+.topbar {
+    background-color:rgb(1, 1, 66);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.topbar span {
+    text-align: left;
+    margin-left: 1%;
+    font-size: 60px;
+}
+
+.problem {
+    border-style: solid;
+    padding: 10px;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    transition: all 0.2s ease;
+    border-radius: 3px;
+    background-color: white;
+    display: block;
+}
+
+.problem:hover {
+    box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
+}
+
+/* invisible until incorrect */
+.answer {
+    visibility: hidden;
+    transition: all 0.5s ease;
+    color: red;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.incorrect {
+    border-color: red;
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem red;
+}
+
+.correct {
+    border-color: springgreen;
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem springgreen;
+}
+
+#user_answer {
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+
+}
+
+.highscore {
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    width: 30%;
+    margin: auto;
+    background-color: white;
+}
+
+.highscore:hover {
+    box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
+}
+
+.highscores {
+    display: inline-block;
+    border-style: solid;
+    padding: 10px;
+}
+
+.highscores b {
+    display: block;
+}
+
+.highscores p {
+    padding: 0px;
+    border-style: solid;
+}
+
+#scorehigh_easy {
+    background-color: springgreen;
+}
+
+#scorehigh_medium {
+    background-color: orange;
+}
+
+#scorehigh_hard {
+    background-color: orangered;
+}
+
+
+
+.levels {
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+
+
+.level {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.level:hover {
+    transform: scale(1.1);
+}
+
+.level:active {
+    transform: scale(0.5);
+}
+
+
+
+.level[value='easy'] {
+    background-color: springgreen;
+}
+
+.level[value='medium'] {
+    background-color: orange;
+}
+
+.level[value='hard'] {
+    background-color: orangered;
+}
+
+#level_buttons_heading {
+    text-align: center;
+    color: white; 
+}
+
+#displaylevel {
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    margin-left: 1%;
+    position: absolute;
+}
+
+.displaylevel_heading {
+    color: white;
+}
+
+.displaylevel_value {
+    background-color: springgreen;
+    border-radius: 5px;
+    padding: 10px;
+    border-style: solid;
+}
+

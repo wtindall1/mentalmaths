@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+<title>Mental Maths</title>
+</head>
+<body>
+
+<div class="topbar">
+    <!-- put logo here -->
+    <span>Mental Maths Practice</span>
+</div>
+
+<br>
+
+<div id="displaylevel">
+    <span class="displaylevel_heading">level: </span>
+    <span class="displaylevel_value"></span>
+</div>
+
+<div class="problem">
+    <span class="question"></span>
+    <span class="answer"></span>
+    <br>
+    <input type="text" id="user_answer"></input>
+</div>
+
+<br>
+
+<div class="highscore">
+    <h3 class="score_heading">High Scores</h3>
+    <div class="highscores" id="scorehigh_easy">
+        <b>Easy</b>
+        <span></span>
+    </div>
+    <div class="highscores" id="scorehigh_medium">
+        <b>Medium</b>
+        <span></span>
+    </div>
+    <div class="highscores" id="scorehigh_hard">
+        <b>Hard</b>
+        <span></span>
+    </div>
+    <hr>
+    <div class="scorecurrent">
+        <b class="streak_heading">Current Streak</b>
+        <br>
+        <span>0</span>
+    </div>
+</div>
+
+<br><br>
+
+<div class="levels">
+    <b id="level_buttons_heading">select level: </b>
+    <br>
+    <input class="level" type="submit" id="easy" value="easy"/>
+    <input class="level" type="submit" id="medium" value="medium"/>
+    <input class="level" type="submit" id="hard" value="hard"/>
+</div>
+<br>
+
+<script src="script.js"></script>
+
+</body>
+</html>
